@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Certification Project Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Me</h1>
+    <p id="description">You are heard!</p>
+    <div>
+      <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <label id="name-label">Name <input id="name" type="text" required placeholder="What's your name?"/></label>
+      <label id="email-label">Email <input id="email" type="email" required placeholder="Give us your correct email address"/></label>
+      <label id="number-label">Age(optional) <input id="number" type="number" name="age" min="13" max="120" placeholder="How old are you?"/>
+      
+      <label id="roles">Which option best describes your current role?
+        <select id="dropdown">
+          <option value="">Select your current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="full-time-learner">Full Time Learner</option>
+          <option value="other">Others</option>
+        </select>
+      </label>
+
+      <label>Do you love what you're currently doing?</label>
+      <label class="radio-label"><input type="radio" class="radio" name="love-job" value="yes"/>Yes</label>
+      <label class="radio-label"><input type="radio" class="radio" name="love-job" value="no"/>No</label>
+
+      <label>What do you love to do?</label>
+      <label class="radio-label"><input type="checkbox" class="radio" name="love-do" value="code"/>Coding</label>
+      <label class="radio-label"><input type="checkbox" class="radio" name="love-do" value="dance"/>Dancing</label>
+      <label class="radio-label"><input type="checkbox" class="radio" name="love-do" value="eat"/>Eating</label>
+      <label class="radio-label"><input type="checkbox" class="radio" name="love-do" value="sleep"/>Sleeping</label>
+      <label class="radio-label"><input type="checkbox" class="radio" name="love-do" value="cook"/>Cooking</label>
+
+      <label>Any comments?</label><textarea id="comments" placeholder="Is there anything you wanna say?"></textarea>
+
+      <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
